@@ -75,12 +75,12 @@ io.on('connection', (socket) => {
       // consumir el endpoint para obtener el usuario por su token
       // le paso el token del usuario como parametro
       // TODO: CAMBIAR A LA URL DE MI API
-      const responseUser = await axios.get('https://supportficct.ga/modelo-c4/api/user/'+name);
+      const responseUser = await axios.get('https://andresmontano.website/api/user/'+name);
       
       // consumir el endpoint para obtener la el proyecto por su codigo/llave
       // le paso el codigo de la sala
       // TODO: CAMBIAR A LA URL DE MI API
-      const responseProject = await axios.get('https://supportficct.ga/modelo-c4/api/cargar-diagrama/'+room);
+      const responseProject = await axios.get('https://andresmontano.website/api/cargar-diagrama/'+room);
 
       if((responseUser.status === 200 && responseProject.status === 200) && responseUser.data.name && responseProject.data.nombre ) {
 
@@ -131,7 +131,7 @@ io.on('connection', (socket) => {
           content : roomGraphXmls[data.room]
         }
         // TODO: CAMBIAR A LA URL DE MI API
-        const response =  await axios.put('https://supportficct.ga/modelo-c4/api/guardar-diagrama/'+data.room, body);
+        const response =  await axios.put('https://andresmontano.website/api/guardar-diagrama/'+data.room, body);
         //console.log(response.status);
         /* let message = 'Ocurrio un error al guardar el diagrama.';
         if(response.status === 200) {

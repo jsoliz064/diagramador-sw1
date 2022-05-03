@@ -65,7 +65,7 @@ const addClassDiagramPalette = function (sb, expand) {
     sb.addEntry(dt + 'object instance', function () {
       var cell = new mxCell(
         'Database', new mxGeometry(0, 0, 160, 90),
-        'shape=cylinder;whiteSpace=wrap;html=1;fontStyle=1;fontFamily=Helvetica;fontSize=14;fillColor=#438dd4;strokeColor=#000000;strokeWidth=2;fontColor=#FFFFFF;'
+        'shape=cylinder;whiteSpace=wrap;html=1;fontStyle=1;fontFamily=Helvetica;fontSize=14;fillColor=#fbb034;strokeColor=#000000;strokeWidth=2;fontColor=#FFFFFF;'
       );
       cell.vertex = true;
       return sb.createVertexTemplateFromCells([cell], cell.geometry.width, cell.geometry.height, 'Database');
@@ -73,7 +73,7 @@ const addClassDiagramPalette = function (sb, expand) {
     sb.addEntry(dt + 'object instance', function () {
       var cell = new mxCell(
         'Actor', new mxGeometry(0, 0, 130, 120),
-        'shape=actor;whiteSpace=wrap;html=1;fontStyle=1;fontFamily=Helvetica;fontSize=14;fillColor=#2B53AD;strokeColor=#000000;strokeWidth=2;fontColor=#FFFFFF;'
+        'shape=actor;whiteSpace=wrap;html=1;fontStyle=1;fontFamily=Helvetica;fontSize=14;fillColor=#371777;strokeColor=#000000;strokeWidth=2;fontColor=#FFFFFF;'
       );
       cell.vertex = true;
       return sb.createVertexTemplateFromCells([cell], cell.geometry.width, cell.geometry.height, 'Actor');
