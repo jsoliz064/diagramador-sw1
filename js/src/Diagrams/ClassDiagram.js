@@ -47,7 +47,7 @@ const addClassDiagramPalette = function (sb, expand) {
     sb.addEntry(dt + 'object instance', function () {
       var cell = new mxCell(
         'Container', new mxGeometry(0, 0, 160, 90),
-		    	'swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#438dd4;fontColor=#FFFFFF;fontFamily=Helvetica;componentName=class;strokeWidth=2;swimlaneFillColor=#438dd4;'
+		    	'swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#78D2F6;fontColor=#FFFFFF;fontFamily=Helvetica;componentName=class;strokeWidth=2;swimlaneFillColor=#78D2F6;'
       );
       cell.vertex = true;
       cell.insert(attributeField.clone());
@@ -57,7 +57,7 @@ const addClassDiagramPalette = function (sb, expand) {
     sb.addEntry(dt + 'object instance', function () {
       var cell = new mxCell(
         'Software System\nExisting System', new mxGeometry(0, 0, 160, 90),
-		    	'html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#999999;fontColor=#FFFFFF;fontFamily=Helvetica;componentName=class;strokeWidth=2;'
+		    	'html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#C8CFDE;fontColor=#FFFFFF;fontFamily=Helvetica;componentName=class;strokeWidth=2;'
       );
       cell.vertex = true;
       return sb.createVertexTemplateFromCells([cell], cell.geometry.width, cell.geometry.height, 'Software System, Existing System');
@@ -72,11 +72,29 @@ const addClassDiagramPalette = function (sb, expand) {
     }),
     sb.addEntry(dt + 'object instance', function () {
       var cell = new mxCell(
-        'Actor', new mxGeometry(0, 0, 160, 90),
-        'shape=actor;whiteSpace=wrap;html=1;fontStyle=1;fontFamily=Helvetica;fontSize=14;fillColor=#438dd4;strokeColor=#000000;strokeWidth=2;fontColor=#FFFFFF;'
+        'Actor', new mxGeometry(0, 0, 130, 120),
+        'shape=actor;whiteSpace=wrap;html=1;fontStyle=1;fontFamily=Helvetica;fontSize=14;fillColor=#2B53AD;strokeColor=#000000;strokeWidth=2;fontColor=#FFFFFF;'
       );
       cell.vertex = true;
       return sb.createVertexTemplateFromCells([cell], cell.geometry.width, cell.geometry.height, 'Actor');
+    }),
+    sb.addEntry(dt + 'object instance', function () {
+      var cell = new mxCell(
+        'triangle', new mxGeometry(0, 0, 130, 120),
+        'shape=triangle;whiteSpace=wrap;html=1;fontStyle=1;fontFamily=Helvetica;fontSize=14;fillColor=#2B53AD;strokeColor=#000000;strokeWidth=2;fontColor=#FFFFFF;'
+      );
+      cell.vertex = true;
+      return sb.createVertexTemplateFromCells([cell], cell.geometry.width, cell.geometry.height, 'Actor');
+    }),
+    sb.addEntry(dt + 'object instance', function () {
+      var cell = new mxCell(
+        'Content', new mxGeometry(0, 0, 160, 90),
+		    	'rounded=0;whiteSpace=wrap;html=1;shadow=1;dashed=0;sketch=1;strokeColor=#000000;strokeWidth=1;fillColor=none;'
+      );
+      cell.vertex = true;
+      
+
+      return sb.createVertexTemplateFromCells([cell], cell.geometry.width, cell.geometry.height, 'Internet Branking System');
     }),
 
   ];
